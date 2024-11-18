@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Table</title>
+  </head>
+  <body>
+    <form action="" onsubmit="">
+      <table style="border-collapse: collapse; width: 100%; max-width: 500px; margin: auto;" cellpadding="8" cellspacing="0">
+        <tr>
+          <td colspan="2" style="text-align: center;">
+            <label for="" style="font-size: 30px;"><strong>Personal Information Form</strong></label>
+          </td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td><label for="firstname">First name:</label></td>
+          <td><input id="firstname" type="text" style="width: 250px;" placeholder="Please enter your firstname" maxlength="6" autocomplete="off" required></td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td><label for="lastname">Last name:</label></td>
+          <td><input id="lastname" type="text" style="width: 250px;" placeholder="Please enter your Lastname" autocomplete="off" required></td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td><label for="email">Email:</label></td>
+          <td><input id="email" type="email" style="width: 250px;" placeholder="Please enter your email address" autocomplete="off" required></td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td><label for="password">Password:</label></td>
+          <td><input id="password" type="password" style="width: 250px;" placeholder="Enter a secure password" minlength="8" required></td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td><label for="confirm-password">Confirm Password:</label></td>
+          <td><input id="confirm-password" type="password" style="width: 250px;" placeholder="Re-enter your password" minlength="8" required></td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td><label>Gender:</label></td>
+          <td>
+            <input type="radio" value="Male" name="gender" id="male">
+            <label for="male">Male</label><br>
+            <input type="radio" value="Female" name="gender" id="female">
+            <label for="female">Female</label><br>
+            <input type="radio" value="Non-binary" name="gender" id="non-binary">
+            <label for="non-binary">Non-binary</label><br>
+            <input type="radio" value="Gender Diverse" name="gender" id="gender-diverse">
+            <label for="gender-diverse">Gender Diverse</label><br>
+            <input type="radio" value="Transgender" name="gender" id="transgender">
+            <label for="transgender">Transgender</label>
+          </td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td><label for="dob">Date of Birth:</label></td>
+          <td><input type="date" id="dob" required></td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td><label for="profession">Choose Your Profession:</label></td>
+          <td>
+            <select id="profession" name="profession" required>
+              <option value="">--Select your profession--</option>
+              <option value="web-development">Web Development</option>
+              <option value="data-analytics">Data Analytics</option>
+              <option value="ui-ux-design">UI/UX Design</option>
+              <option value="software-engineering">Software Engineering</option>
+              <option value="project-management">Project Management</option>
+            </select>
+          </td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td><label for="code-skills">Select your coding skills:</label></td>
+          <td>
+            <input type="checkbox" id="html" name="code-skills" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" id="css" name="code-skills" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="checkbox" id="javascript" name="code-skills" value="JavaScript">
+            <label for="javascript">JavaScript</label><br>
+            <input type="checkbox" id="python" name="code-skills" value="Python">
+            <label for="python">Python</label><br>
+            <input type="checkbox" id="java" name="code-skills" value="Java">
+            <label for="java">Java</label><br>
+            <input type="checkbox" id="csharp" name="code-skills" value="C#">
+            <label for="csharp">C#</label><br>
+            <input type="checkbox" id="sql" name="code-skills" value="SQL">
+            <label for="sql">SQL</label><br>
+            <input type="checkbox" id="Other" name="code-skills" value="Other">
+            <label for="Other">Other</label>
+          </td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd;">
+          <td><label for="textarea">Tell us more about yourself:</label></td>
+          <td><textarea id="textarea" cols="30" rows="3"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center;">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 容器样式 */
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap; /* 允许换行 */
+            justify-content: center; /* 居中对齐子元素 */
+        }
+
+        /* 标题样式 */
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            color: azure;
+            margin: 0;
+            opacity: 0.9;
+        }
+
+        /* 背景样式 */
+        .background {
+            width: 300px;
+            height: 200px;
+            border-radius: 15px;
+            box-sizing: border-box;
+            position: relative;
+            padding: 15px;
+            overflow: hidden; /* 防止内容溢出 */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+         /* Hover 效果 */
+         .background:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* 添加阴影 */
+            transform: translate(5px, -5px); /* 向右上角移动5px */
+        }
+
+        /* 具体背景样式 */
+        #uxresearch {
+            background-image: 
+                linear-gradient(to right, rgba(8, 16, 48, 0.8), rgba(17, 33, 95, 0)),
+                url("back1.png");
+            background-color: rgba(4, 8, 25, 0.5);
+            background-blend-mode: overlay;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #bootcamp {
+            background-image: 
+                linear-gradient(to right, rgba(12, 2, 17, 0.8), rgba(20, 5, 28, 0)),
+                url("back2.png");
+            background-color: rgba(20, 5, 28, 0.5);
+            background-blend-mode: overlay;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* 文本样式 */
+        p {
+            color: white;
+            font-size: 13px;
+            line-height: 1.5;
+            margin: 0; /* 去除 margin，以免与父容器不协调 */
+            font-family: 'Times New Roman', Times, serif;
+            opacity: 0.8;
+        }
+
+        /* 按钮样式 */
+        .button {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 10px 20px;
+            font-size: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            opacity: 0.9;
+            align-self: flex-start; /* 让按钮左对齐 */
+            transition: background-color 0.3s, color 0.3s; /* 添加平滑过渡 */
+        }
+
+        .button:hover {
+            background-color: white;
+            color: gray;
+        }
+
+        /* 小屏幕布局：一列排列 */
+        @media (max-width: 400px) {
+            .background {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background" id="uxresearch">
+            <h2>UX Research</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="button">LEARN MORE</button>
+        </div>
+
+        <div class="background" id="bootcamp">
+            <h2>Bootcamp</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="button">LEARN MORE</button>
+        </div>
+    </div>
+</body>
+</html>

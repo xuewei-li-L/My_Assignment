@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+</head>
+<body>
+    <h1>Shopping List</h1>
+
+    <!-- 输入新物品 -->
+    <div>
+        <h2>添加物品</h2>
+        <label>物品名称：<input type="text" id="addItemName"></label><br>
+        <label>物品价格：<input type="number" id="addItemPrice"></label><br>
+        <label>物品数量：<input type="number" id="addItemQuantity"></label><br>
+        <button onclick="addItem()">添加物品</button>
+        <div id="addItemError"></div>
+    </div>
+
+    <!-- 删除物品 -->
+    <div>
+        <h2>删除物品</h2>
+        <label>物品名称：<input type="text" id="deleteItemName"></label><br>
+        <button onclick="deleteItem()">删除物品</button>
+        <div id="deleteItemError"></div>
+    </div>
+
+    <!-- 显示购物清单 -->
+    <div id="shopping-list-display">
+        <h2>购物清单：</h2>
+    </div>
+
+    <script src="ShoppingList.js"></script>
+</body>
+</html>
