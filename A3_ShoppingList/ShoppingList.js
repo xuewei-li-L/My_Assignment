@@ -67,7 +67,9 @@ function updateShoppingListDisplay() {
         shoppingListDisplay.innerHTML = `
             <h2>购物清单：</h2>
             <ul>
-                ${shoppingList.map(item => `<li>${item.name} - 单价：${item.price} - 数量：${item.quantity}</li>`).join("")}
+                ${shoppingList
+                    .map((item, index) => `<li>${index + 1}. ${item.name} - 单价：${item.price} - 数量：${item.quantity}</li>`)
+                    .join("")}
             </ul>
         `;
     }
