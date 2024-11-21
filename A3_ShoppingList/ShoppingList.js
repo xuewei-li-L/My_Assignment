@@ -5,32 +5,6 @@ let shoppingList = [
     { name: "面包", price: 15, quantity: 1 }
 ];
 
-// 更新页面的购物清单和总价
-function updateShoppingListDisplay() {
-    const shoppingListDisplay = document.getElementById("shopping-list-display");
-
-    // 检查购物清单长度
-    if (shoppingList.length > 5) {
-        shoppingListDisplay.innerHTML = `
-            <h2>购物清单：</h2>
-            <p style="color: red; font-weight: bold;">您的购物车已满！</p>
-        `;
-    } else {
-        shoppingListDisplay.innerHTML = `
-            <h2>购物清单：</h2>
-            <ul>
-                ${shoppingList.map(item => `<li>${item.name} - 单价：${item.price} - 数量：${item.quantity}</li>`).join("")}
-            </ul>
-        `;
-    }
-}
-
-// 显示错误信息
-function showErrorMessage(targetId, message) {
-    const target = document.getElementById(targetId);
-    target.innerHTML = `<p style="color: red;">${message}</p>`;
-}
-
 // 添加物品
 function addItem() {
     // 检查购物清单是否已满
@@ -77,6 +51,35 @@ function addItem() {
     // 更新显示
     updateShoppingListDisplay();
 }
+
+
+// 更新页面的购物清单
+function updateShoppingListDisplay() {
+    const shoppingListDisplay = document.getElementById("shopping-list-display");
+
+    // 检查购物清单长度
+    if (shoppingList.length > 5) {
+        shoppingListDisplay.innerHTML = `
+            <h2>购物清单：</h2>
+            <p style="color: red; font-weight: bold;">您的购物车已满！</p>
+        `;
+    } else {
+        shoppingListDisplay.innerHTML = `
+            <h2>购物清单：</h2>
+            <ul>
+                ${shoppingList.map(item => `<li>${item.name} - 单价：${item.price} - 数量：${item.quantity}</li>`).join("")}
+            </ul>
+        `;
+    }
+}
+
+// 显示错误信息
+function showErrorMessage(targetId, message) {
+    const target = document.getElementById(targetId);
+    target.innerHTML = `<p style="color: red;">${message}</p>`;
+}
+
+
 
 // 删除物品
 function deleteItem() {
