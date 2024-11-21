@@ -55,7 +55,7 @@ function addItem() {
 
 // 更新页面的购物清单
 function updateShoppingListDisplay() {
-    const shoppingListDisplay = document.getElementById("shopping-list-display");
+    const shoppingListDisplay = document.getElementById("shoppingListDisplay");
 
     // 检查购物清单长度
     if (shoppingList.length > 5) {
