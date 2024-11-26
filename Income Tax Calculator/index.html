@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Income Tax Calculator</title>
+  <!-- 引入 CSS -->
+  <link rel="stylesheet" href="style.css"> 
+  <!-- 引入 JavaScript -->
+  <script src="script.js"></script> 
+</head>
+<body>
+  <div class="container">
+    <h1>Income Tax Calculator</h1>
+    <label for="income">Enter your taxable income (AUD):</label>
+    <input type="number" id="income" placeholder="e.g., 50000">
+    <button onclick="calculateTax()">Calculate Tax</button>
+    <div class="result" id="result" style="display: none;"></div>
+  </div>
+</body>
+</html>
