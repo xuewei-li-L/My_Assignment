@@ -7,12 +7,12 @@ function main() {
       }
 }
 
-// 计算税额函数
+// 计算
 function calculateTax() {
-    const income = parseFloat(document.getElementById("income").value); // 获取用户输入的收入
+    const income = parseFloat(document.getElementById("income").value); // 获取收入
     let tax = 0;
   
-    // 按照税率表计算税额
+    // 计算税额
     if (income <= 18200) {
       tax = 0;
     } else if (income <= 45000) {
