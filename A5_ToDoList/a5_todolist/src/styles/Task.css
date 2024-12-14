@@ -1,0 +1,30 @@
+/* 任务容器样式 */
+.task {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  justify-content: space-between;
+}
+
+/* 五角星默认样式（灰色未完成） */
+.star {
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer; /* 鼠标变成手型 */
+  color: gray;
+  transition: color 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 五角星完成状态（黄色） */
+.star.completed {
+  color: yellow;
+}
+
+/* 任务文字未完成样式 */
+.completed-text {
+  text-decoration: line-through; /* 添加横线 */
+  color: gray; /* 变成灰色 */
+  transition: all 0.3s ease; /* 添加过渡效果 */
+}
