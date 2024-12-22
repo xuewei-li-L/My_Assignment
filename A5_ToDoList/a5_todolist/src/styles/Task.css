@@ -1,4 +1,4 @@
-/* 任务容器样式 */
+
 .task {
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@
   color: yellow;
 }
 
-/* 任务文字未完成样式 */
+
 .completed-text {
   text-decoration: line-through; /* 添加横线 */
   color: gray; /* 变成灰色 */
